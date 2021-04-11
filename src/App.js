@@ -33,8 +33,11 @@ const useStyles = makeStyles((theme) => ({
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(3),
   },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
+  calculate: {
+    margin: theme.spacing(4, 0, 2),
+  },
+  reset: {
+    margin: theme.spacing(0.5, 0, 2),
   },
   root: {
     display: 'flex',
@@ -234,7 +237,7 @@ function NumberFormatCustom(props) {
               fullWidth
               variant="contained"
               color="primary"
-              className={classes.submit}
+              className={classes.calculate}
               onClick={() => {
               calculate();;
             }}
@@ -246,7 +249,7 @@ function NumberFormatCustom(props) {
               fullWidth
               variant="contained"
               color="primary"
-              className={classes.submit}
+              className={classes.reset}
               onClick={() => {
               reset_val();
             }}
