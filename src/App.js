@@ -146,9 +146,10 @@ function NumberFormatCustom(props) {
                     onChange={(e) => setPrincipal(e.target.value)}
                     name="numberformat"
                     id="formatted-numberformat-input"
-                    InputProps={{
-                      inputComponent: NumberFormatCustom,
-                    }}
+                    // InputProps={{
+                    //   inputComponent: NumberFormatCustom,
+                    // }}
+                    type="number"
                   />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -162,9 +163,10 @@ function NumberFormatCustom(props) {
                   value={years}
                   onChange={(e) => setYears(e.target.value)}
                   name="Time"
-                  InputProps={{
-                      inputComponent: NumberFormatCustom,
-                  }}
+                  // InputProps={{
+                  //     inputComponent: NumberFormatCustom,
+                  // }}
+                    type="number"
                   // autoComplete="lname"
                 />
               </Grid>
@@ -178,9 +180,10 @@ function NumberFormatCustom(props) {
                   value={interest}
                   label="Interest Rate"
                   onChange={(e) => setInterest(e.target.value)}
-                  InputProps={{
-                      inputComponent: NumberFormatCustom,
-                  }}
+                  // InputProps={{
+                  //     inputComponent: NumberFormatCustom,
+                  // }}
+                    type="number"
                 />
               </Grid>
               <Grid item xs={12}>
