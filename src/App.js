@@ -158,7 +158,7 @@ function NumberFormatCustom(props) {
                   required
                   fullWidth
                   id="Time"
-                  label="Time"
+                  label="Time in Years"
                   defaultValue="0"
                   value={years}
                   onChange={(e) => setYears(e.target.value)}
@@ -178,7 +178,7 @@ function NumberFormatCustom(props) {
                   // id="email"
                   defaultValue="0"
                   value={interest}
-                  label="Interest Rate"
+                  label="Interest Rate in %"
                   onChange={(e) => setInterest(e.target.value)}
                   // InputProps={{
                   //     inputComponent: NumberFormatCustom,
